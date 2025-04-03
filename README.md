@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+# 🎮 NACON Frontend Technical Test – Store Configuration Interface
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🧭 Overview
 
-## Available Scripts
+This project is part of a frontend technical test to design and implement reusable components for an in-game store configuration interface using **React (TypeScript)**.
 
-In the project directory, you can run:
+The application showcases how store products can be displayed using two different UI formats and includes a mock API for data handling. The solution is designed with modularity, accessibility, and maintainability in mind.
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React (TypeScript)
+- Material UI (MUI)
+- Styled-components (initial version)
+- Mock API (static JSON)
+- React Router (if routing is used)
+- Jest & Testing Library (if tests are included)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## 📦 Features Implemented
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### ✅ Selected Display Formats
 
-### `npm run build`
+- **Carousel View** – Horizontal slider to browse products one at a time.
+- **Grid View** – Structured layout showing multiple products.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### ✅ Components
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `ProductCard` – Displays individual product details.
+- `Carousel` – Navigable component using MUI's carousel logic.
+- `ProductGrid` – Responsive grid using MUI's `Box` and `Grid`.
+- `PromotionDetail` – Interface for editing and validating product promotions.
+- `StoreConfigEdit` – Admin-style interface for store layout editing.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ✅ Mock API
 
-### `npm run eject`
+- Simulates fetching product data from a static endpoint.
+- Provides mock store configuration for UI rendering.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🚀 Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Prerequisites
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Node.js (>= 16)
+- Yarn or npm
 
-## Learn More
+### Setup
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+# Clone the repository
+git clone https://github.com/fetnimohamed/nacon-store-test
+cd nacon-store-test
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+```
